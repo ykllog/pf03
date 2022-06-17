@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <%- include('../_includes/_common.ejs') %>
+
+        <title>共同開発制作物&ensp;&gt;&ensp;伊藤宏恵のポートフォリオサイト</title>
+    </head>
+
+    <body>
+        <%- include('../_includes/_header') %>
+
+        <main class="main">
+            <section class="works-wrap">
+                <article class="works">
+                    <div class="works__pic">
+                        <img src="../../asset/image/works_img_r007.png" alt="TENKUE HOTELのファーストビューの画像" class="works__img">
+                    </div>
+
+                    <div class="works__catch">
+                        <h2 class="works__catch__main-title">TENKUE HOTEL</h2>
+                        <span class="works__catch__sub-title">フロント共同開発</span>
+                        <div class="works__catch__link link-box">
+                            <a href="https://tenkue-r007.netlify.app/" target="_blank" class="link-box__link">サイトへ</a>
+                        </div>
+                    </div>
+
+                    <dl class="works__content">
+                        <dt class="works__content__title">サイトについて</dt>
+                        <dd class="works__content__description">
+                            <p class="works__content__description__text">
+                                Git/GitHubを共同で使用してみようという学習メニューに参加。<br>
+                                Gitの使い方はもちろん、<span class="span__under">HTML/CSSの書き方の基本やGitについてZOOMで合計10時間以上他のメンバーに対して講義を行い</span>、なんとなくで把握していたことをより自身のものにできました。
+                            </p>
+                            <p class="works__content__description__text">
+                                また、共同開発中に「コード綺麗でした。さすがですねー！」という嬉しいコメントをメンターさんからいただきました。<br>
+                                メンターさんには、「ここまで仲良く共同開発ができるチームも少ない」とお褒めの言葉も賜り、非常に有益な学習となりました。
+                            </p>
+                        </dd>
+                        <dt class="works__content__title">使用言語</dt>
+                        <dd class="works__content__description">
+                            HTML、Sass（SCSS）、jQuery
+                        </dd>
+                        <dt class="works__content__title">担当箇所</dt>
+                        <dd class="works__content__description">
+                            ヘッダー（ハンバーガーメニューのみ）、フッター、ルーム、アクセス、デプロイ（Netlify）
+                        </dd>
+                        <dt class="works__content__title">作成期間</dt>
+                        <dd class="works__content__description">
+                            2020/11/01～2020/11/18
+                        </dd>
+                        <dt class="works__content__title">ソースコード</dt>
+                        <dd class="works__content__description">
+                            <a href="https://github.com/ykllog/tenkue-r007" target="_blank" class="normal__link">https://github.com/ykllog/tenkue-r007</a>
+                        </dd>
+                    </dl>
+                </article>
+
+                <div class="back-link">
+                    <div class="link-box"><a href="/#works" class="link-box__link">制作物一覧へ</a></div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('../_includes/_footer.ejs') %>
+    </body>
+</html>

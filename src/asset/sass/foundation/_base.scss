@@ -1,0 +1,124 @@
+//*------------------*
+//*  Base定義
+//*------------------*
+
+$color-default: #1a1615;
+$color-light: #fff;
+$color-accent-main: #cc7aa0;
+$color-accent-base: #ebc4c0;
+$color-accent-bg: #6b5e58;
+
+//*------------------*
+//*  font定義
+//*------------------*
+
+//font-family
+$font-main: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
+  sans-serif;
+$font-bowlby: "Bowlby One SC", cursive;
+$font-mplus: "M PLUS Rounded 1c", sans-serif;
+// fontweight→300:light,500:medium,700:black,900:bold
+$font-windsong: "WindSong", cursive;
+
+//font-size
+@function rem($px) {
+  @return ($px / 16) * 1rem;
+}
+// 記述例： font-size: rem(14); /* font-sizeは14px相当にする */
+
+//*------------------*
+//*  レスポンシブ定義
+//*------------------*
+
+@mixin lg-layout($width: 1000px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+@mixin tb-layout($width: 901px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+@mixin md-layout($width: 701px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+@mixin sm-layout($width: 700px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
+
+//*------------------*
+//*  共通定義
+//*------------------*
+
+body {
+  font-size: rem(14);
+  font-family: $font-main;
+  color: $color-default;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+html,
+body,
+a,
+.cursor {
+  cursor: none;
+}
+
+.lg-nav__link {
+  color: $color-default;
+  text-decoration: none;
+  font-weight: bold;
+  @include hover {
+    color: $color-accent-main;
+  }
+}
+.normal__link {
+  @extend .lg-nav__link;
+  padding: 0 .25em;
+  border-bottom: 3px dotted $color-accent-main;
+}
+.span__red {
+  color: red;
+}
+.span__color {
+  color: $color-accent-main;
+  font-weight: bold;
+}
+.span__strong {
+  font-weight: bold;
+}
+.span__under {
+  color: $color-accent-main;
+  font-weight: bold;
+  padding: 0.25em;
+  background: linear-gradient(transparent 60%, rgba($color-accent-base, 0.25) 60%);
+}
+.br {
+  display: inline-block;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <%- include('../_includes/_common.ejs') %>
+
+        <title>ポートフォリオサイト&ensp;&gt;&ensp;伊藤宏恵のポートフォリオサイト</title>
+</head>
+
+<body>
+    <%- include('../_includes/_header') %>
+
+        <main class="main">
+            <section class="works-wrap">
+                <article class="works">
+                    <div class="works__pic">
+                        <img src="../../asset/image/works_img_pf.png" alt="ポートフォリオのファーストビューの画像" class="works__img">
+                    </div>
+
+                    <div class="works__catch">
+                        <h2 class="works__catch__main-title">ポートフォリオサイト</h2>
+                        <div class="works__catch__link link-box">
+                            <a href="/" target="_blank" class="link-box__link">サイトへ</a>
+                        </div>
+                    </div>
+
+                    <dl class="works__content">
+                        <dt class="works__content__title">サイトについて</dt>
+                        <dd class="works__content__description">
+                            <p class="works__content__description__text">
+                                <span class="span__under">このページを見たらわたしについてすべて分かる</span>、を目標にデザインからすべて担当しました。<br>
+                                どんな情報を入れ、反対に入れないか、の取捨選択が一番難しかったです。<br>
+                                また、ワイヤーフレームやサイト内で使用する画像の作成、その後のデザインカンプ作成など、デザイン部分に思っていた以上に時間がかかりました。
+                            </p>
+                            <p class="works__content__description__text">
+                                コーディングについては、jQueryを使用したハンバーガーメニューやスムーススクロール、ローディング画面など、一般的なサイトに使用されている技術をできる限り盛り込みました。<br>
+                                今後も最新技術を採り入れ、順次アップデートを行う予定です。
+                            </p>
+                        </dd>
+                        <dt class="works__content__title">使用言語</dt>
+                        <dd class="works__content__description">
+                            HTML、Sass（SCSS）、jQuery
+                        </dd>
+                        <dt class="works__content__title">作成期間</dt>
+                        <dd class="works__content__description">
+                            ８日間（デザイン修正３日、コーディング５日）&emsp;＋修正
+                        </dd>
+                        <dt class="works__content__title">ソースコード</dt>
+                        <dd class="works__content__description">
+                            <a href="https://github.com/ykllog/pf03" target="_blank"
+                                class="normal__link">https://github.com/ykllog/pf03</a>
+                        </dd>
+                    </dl>
+                </article>
+
+                <div class="back-link">
+                    <div class="link-box"><a href="/#works" class="link-box__link">制作物一覧へ</a></div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('../_includes/_footer.ejs') %>
+</body>
+
+</html>

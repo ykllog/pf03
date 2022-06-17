@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <%- include('./_includes/_common.ejs') %>
+
+        <title>伊藤宏恵のポートフォリオサイト</title>
+</head>
+
+<body>
+    <div id="loading">
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
+    </div>
+
+    <%- include('./_includes/_header') %>
+
+        <main class="main index-main">
+            <section class="index__fv">
+                <div class="site-title__area">
+                    <div class="site-title__area__inner">
+                        <h1 class="site-title"><span class="site-title__strong">ito</span>portfolio site</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="top__section works__section" id="works">
+                <div class="center-title">
+                    <h2 class="main-title">works</h2>
+                    <span class="sub-title">制作実例</span>
+                </div>
+
+                <div class="work__content scroll-fade">
+                    <ul class="work__content__list">
+                        <li class="work__content__item">
+                            <a href="/works/portfolio.html" class="work__content__link">
+                                <figure class="work__content__pic">
+                                    <img src="../asset/image/works_item_pf.png" alt="ポートフォリオの画像"
+                                        class="work__content__img">
+                                    <figcaption class="work__content__discription">
+                                        <p class="work__content__text">ポートフォリオサイト（当サイト）</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li class="work__content__item">
+                            <a href="/works/narou.html" class="work__content__link">
+                                <figure class="work__content__pic">
+                                    <img src="../asset/image/works_item_narou.png" alt="なろう本文検索の画像"
+                                        class="work__content__img">
+                                    <figcaption class="work__content__discription">
+                                        <p class="work__content__text">なろう本文検索</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li class="work__content__item">
+                            <a href="/works/blog.html" class="work__content__link">
+                                <figure class="work__content__pic">
+                                    <img src="../asset/image/works_item_blog.png" alt="学習記録ブログの画像"
+                                        class="work__content__img">
+                                    <figcaption class="work__content__discription">
+                                        <p class="work__content__text"><span class="br">spindle</span><span
+                                                class="br">（WordPressブログ）</span></p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li class="work__content__item">
+                            <a href="/works/work01.html" class="work__content__link">
+                                <figure class="work__content__pic">
+                                    <img src="../asset/image/works_fv_work01.png" alt="模写サイトの画像"
+                                        class="work__content__img">
+                                    <figcaption class="work__content__discription">
+                                        <p class="work__content__text">
+                                            <span class="br">DIGSMILE INC.</span><span class="br">（模写サイト）</span>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li class="work__content__item">
+                            <a href="/works/r007.html" class="work__content__link">
+                                <figure class="work__content__pic">
+                                    <img src="../asset/image/works_fv_r007.png" alt="フロント共同開発の画像"
+                                        class="work__content__img">
+                                    <figcaption class="work__content__discription">
+                                        <p class="work__content__text">
+                                            <span class="br">TENKUE HOTEL</span><span class="br">（フロント共同開発）</span>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li class="work__content__item">
+                            <a href="/works/girl.html" class="work__content__link">
+                                <figure class="work__content__pic">
+                                    <img src="../asset/image/works_item_girl.png" alt="女子共同開発の画像"
+                                        class="work__content__img">
+                                    <figcaption class="work__content__discription">
+                                        <p class="work__content__text">
+                                            <span class="br">Tech女子図鑑</span><span class="br">（女子共同開発）</span>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="top__section skills__section" id="skills">
+                <div class="center-title">
+                    <h2 class="main-title">skills</h2>
+                    <span class="sub-title">できること</span>
+                </div>
+
+                <article class="skills">
+                    <div class="skills__item-list scroll-fade">
+                        HTML｜CSS｜Sass<br>
+                        JavaScript（jQuery）<br>
+                        WordPress｜Git/GitHub
+                    </div>
+
+                    <ul class="skills__list scroll-fade">
+                        <li class="skills__item">Sassやgulp、EJSを用いた効率的なコーディング</li>
+                        <li class="skills__item">WordPressを用いたWebサイト制作</li>
+                        <li class="skills__item">CSSやJavaScript（jQuery）を用いたアニメーション実装</li>
+                        <li class="skills__item">レスポンシブ対応</li>
+                    </ul>
+
+                    <div class="skills__message scroll-fade">
+                        <p class="skills__text">
+                            デザインを忠実に再現しつつ、W3Cのサイトで構造や記述に誤りがないかの確認を行うことで、正確で保守性の高いコーディングを日々追求しています。
+                        </p>
+                        <p class="skills__text">
+                            また、デモサイト、本番環境共に実機確認を行い、スマートフォンやタブレットの画面サイズでも表示崩れのないように丁寧な作成を心掛けています。
+                        </p>
+                        <p class="skills__text">
+                            画像の書き出しや各種値の取得など、コーディングの実務で必要なデザインツールの操作方法は一通り理解しています。
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="about__section" id="aboutme">
+                <div class="center-title about-title">
+                    <h2 class="main-title">ABOUT</h2>
+                    <span class="sub-title">わたしのこと</span>
+                </div>
+
+                <article class="about__content">
+                    <div class="about__photo scroll-fade">
+                        <figure class="about__photo__pic">
+                            <img src="../../asset/image/mephoto.jpg" alt="伊藤宏恵の顔写真" class="about__photo__img">
+                            <figcaption class="about__photo__discription">
+                                <p class="about__photo__text">name:</p>
+                                <p class="about__photo__text about__photo__text--strong">いとうひろえ</p>
+                            </figcaption>
+                        </figure>
+                        <%- include('./_component/_address.ejs') %>
+                    </div>
+
+                    <div class="about__message scroll-fade">
+                        <h3 class="about__message__title">summary</h3>
+                        <ul class="about__message__list">
+                            <li class="about__message__item">生まれも育ちも愛知県の30代。</li>
+                            <li class="about__message__item">2022年1月より、<span
+                                    class="span__under">キッポウ</span>という屋号で活動中のWebコーダーです。
+                            </li>
+                            <li class="about__message__item">人をサポートすることがスキなので、オンライン秘書としても活動しています。</li>
+                            <li class="about__message__item">趣味は、読書と手帳に「<span class="span__strong">ものづくり</span>」。
+                            </li>
+                            <li class="about__message__item">ちゃん付けで呼ばれると距離が近くなったような気がしてスキです。</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section class="top__section" id="contact">
+                <div class="center-title">
+                    <h2 class="main-title">CONTACT</h2>
+                    <span class="sub-title">お問い合わせ</span>
+                </div>
+
+                <div class="contact">
+                    <form id="contact__form"
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdC-ySG7ZeV-A3UU-o6xcU2Y_HuUIqIJq2UX39bCeVTgQeqHA/formResponse"
+                        method="post">
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <label for="company">会社名</label>
+                                <input type="text" id="company" class="cursor" name="entry.1757838812">
+                            </li>
+                            <li class="contact__item">
+                                <label for="name">氏名<span class="contact__required">必須</span></label>
+                                <input type="text" id="name" class="required cursor" name="entry.1834422668">
+                            </li>
+                            <li class="contact__item">
+                                <label for="mail">メールアドレス<span class="contact__required">必須</span></label>
+                                <input type="text" id="mail" class="required mail cursor" name="entry.1476937868">
+                            </li>
+                            <li class="contact__item">
+                                <label for="message">お問い合わせ内容<span class="contact__required">必須</span></label>
+                                <textarea type="text" id="message" class="required cursor"
+                                    name="entry.1534010772"></textarea>
+                            </li>
+                        </ul>
+                        <input type="submit" class="contact__submit cursor" value="送信する">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <%- include('./_includes/_footer.ejs') %>
+</body>
+
+</html>

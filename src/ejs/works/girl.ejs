@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <%- include('../_includes/_common.ejs') %>
+
+        <title>Tech女子図鑑&ensp;&gt;&ensp;伊藤宏恵のポートフォリオサイト</title>
+    </head>
+
+    <body>
+        <%- include('../_includes/_header') %>
+
+        <main class="main">
+            <section class="works-wrap">
+                <article class="works">
+                    <div class="works__pic">
+                        <img src="../../asset/image/works_img_girl.png" alt="Tech女子図鑑のファーストビューの画像" class="works__img">
+                    </div>
+
+                    <div class="works__catch">
+                        <h2 class="works__catch__main-title">Tech女子図鑑</h2>
+                        <span class="works__catch__sub-title">女子共同開発</span>
+                        <div class="works__catch__link link-box">
+                            <a href="https://tech-women-reference.herokuapp.com/" target="_blank" class="link-box__link">サイトへ</a>
+                        </div>
+                    </div>
+
+                    <dl class="works__content">
+                        <dt class="works__content__title">サイトについて</dt>
+                        <dd class="works__content__description">
+                            <p class="works__content__description__text">
+                                <span class="span__under">女性の女性による女性のための共同開発</span>と題して、女性エンジニアのロールモデルが分かるサイトを女性だけで作ってみたいと主催二人で盛り上がった結果、生まれたサイト。<br>
+                                盛り上がった相手（当時バックエンド言語であるRuby学習中）とは別にフロント２名、バック１名を集め、合計５人で共同開発しました。
+                            </p>
+                            <p class="works__content__description__text">
+                                共同開発に必要な人員について悩むのはもちろん、デプロイ先をどこにするか、Rubyのバージョンをどうするか、ユーザーに入力してもらう項目をどうするか、など、要件定義や基本設計の部分をそれまで行ったことがなかったので、非常に勉強になりました。<br>
+                                本来の予定では、ワイヤーフレームだけではなくデザインまで担当しつつディレクターとして工程管理を担当予定でしたが、実際の開発に入った段階で風邪をひいてしまい、なくなく他のメンバーに引き継ぐことになりました。
+                            </p>
+                            <p class="works__content__description__text">
+                                デプロイ先であるHerokuは、一定期間が経過すると画像が消えるという仕様のため、現在一部の画像が表示されなくなっています。<br>
+                                こちらの問題については把握済みで、どのように対処するかをバックエンドエンジニアと相談中になります。
+                            </p>
+                        </dd>
+                        <dt class="works__content__title">使用言語</dt>
+                        <dd class="works__content__description">
+                            Ruby（2.5.1）、Ruby on Rails（5.2.4）、HTML、Sass（SCSS）、jQuery、PostgreSQL（12.4）
+                        </dd>
+                        <dt class="works__content__title">担当箇所</dt>
+                        <dd class="works__content__description">
+                            要件定義、基本設計、デザイン（ワイヤーフレーム）
+                        </dd>
+                        <dt class="works__content__title">作成期間</dt>
+                        <dd class="works__content__description">
+                            ３ヶ月半（事前準備２ヶ月、開発期間１ヶ月半）
+                        </dd>
+                        <dt class="works__content__title">ソースコード</dt>
+                        <dd class="works__content__description">
+                            <a href="https://github.com/ikemomo/tenkue-girls-app" target="_blank" class="normal__link">https://github.com/ikemomo/tenkue-girls-app</a>
+                        </dd>
+                    </dl>
+                </article>
+
+                <div class="back-link">
+                    <div class="link-box"><a href="/#works" class="link-box__link">制作物一覧へ</a></div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('../_includes/_footer.ejs') %>
+    </body>
+</html>

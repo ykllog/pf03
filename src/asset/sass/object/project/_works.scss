@@ -1,0 +1,79 @@
+//*------------------*
+//*  コンテンツ部分
+//*------------------*
+
+.works {
+  &__pic {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+    @include md-layout {
+      width: 70%;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  &__catch {
+    text-align: center;
+    margin-bottom: 100px;
+    &__main-title {
+      font-family: $font-mplus;
+      font-size: clamp(rem(35), 5vw, rem(60));
+      font-weight: 900;
+      color: $color-accent-main;
+    }
+    &__sub-title {
+      font-family: $font-mplus;
+      font-size: clamp(rem(20), 2vw, rem(30));
+      font-weight: 300;
+      color: $color-accent-main;
+      margin-top: -1em;
+      display: block;
+    }
+    .link-box {
+      margin-top: 50px !important;
+      @include link-box($content: '\f35d');
+    }
+  }
+  &__content {
+    width: auto;
+    margin-bottom: 50px;
+    &__title {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: rgba($color-accent-base, .5);
+      font-size: rem(20);
+      font-weight: bold;
+    }
+    &__description {
+      padding: 24px 15px 48px;
+      @include md-layout {
+        padding: 40px 50px 80px;
+      }
+      &__text:not(:last-child) {
+        margin-bottom: 12px;
+      }
+      &__pic {
+        display: block;
+        margin-bottom: 12px;
+        padding: 12px 0;
+      }
+      .list-style {
+        list-style-type: disc;
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+
+.back-link {
+  .link-box {
+    @include link-box($margin: 0 auto 100px, $content: '\f105');
+  }
+}

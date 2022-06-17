@@ -1,0 +1,138 @@
+.nav-toggle {
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  height: 30px;
+  @include z-index(nav-toggle);
+  @include md-layout {
+    top: 30px;
+  }
+  @include lg-layout {
+    display: none;
+  }
+  &__button {
+    position: relative;
+    width: 30px;
+  }
+  &__line {
+    width: 100%;
+    height: 2px;
+    right: 0;
+    display: block;
+    background: $color-accent-bg;
+    position: absolute;
+    transition: transform 0.6s ease-in-out, top 0.5s ease;
+    &:nth-child(1) {
+      top: 5px;
+    }
+    &:nth-child(2) {
+      top: 15px;
+    }
+    &:nth-child(3) {
+      top: 25px;
+    }
+  }
+}
+
+.open {
+  overflow: hidden;
+  @include lg-layout {
+    display: none;
+  }
+  .sm-nav {
+    width: 100%;
+    transition: 0.5s;
+    visibility: visible;
+    &__list {
+      opacity: 1;
+      transform: translateX(0);
+      transition: transform 1s ease, opacity 0.9s ease;
+    }
+  }
+  .nav-toggle__line {
+    background: $color-default;
+    &:nth-child(1) {
+      top: 15px;
+      width: 100%;
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      top: 15px;
+      width: 0;
+      left: 50%;
+    }
+    &:nth-child(3) {
+      top: 15px;
+      width: 100%;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.sm-nav {
+  background: $color-light;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  @include md-layout {
+    top: 125px;
+  }
+  @include lg-layout {
+    display: none;
+  }
+  &__list {
+    width: 100%;
+    max-width: 300px;
+    margin: 10vh auto 0;
+    @include md-layout {
+      max-width: 450px;
+      margin: 15vh auto 0;
+    }
+  }
+  &__item {
+    margin-bottom: .25em;
+    &:first-child {
+      text-align: center;
+      margin-bottom: 1.5em;
+      @include md-layout {
+        margin-bottom: 100px;
+      }
+      .sm-nav__img {
+        width: 300px;
+        height: auto;
+        @include md-layout {
+          width: 450px;
+        }
+      }
+      &::before {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    display: block;
+    padding: 0.25em 1.5em;
+    transition: 0.3s;
+    font-family: $font-mplus;
+    font-weight: 900;
+    @include hover {
+      &:hover {
+        color: $color-default;
+        background-color: rgba($color-accent-base, 0.25);
+      }
+    }
+    &::before {
+      content: "\02765";
+      font-family: $font-mplus;
+      color: $color-accent-main;
+      margin-right: 1em;
+    }
+  }
+}

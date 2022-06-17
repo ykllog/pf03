@@ -1,0 +1,16 @@
+@include lg-layout {
+  .scroll-fade {
+    transform: translateY(0);
+    transition: 2s ease-in-out;
+    opacity: 0;
+    &.fadeIn {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+    &.fadeOut {
+      transform: translateY(0);
+      transition: 2s ease-in-out;
+      opacity: 0;
+    }
+  }
+}

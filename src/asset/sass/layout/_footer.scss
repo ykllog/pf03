@@ -1,0 +1,38 @@
+.footer__inner {
+  text-align: center;
+  background-color: $color-accent-bg;
+  width: 100%;
+  height: 125px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  .copyright__text {
+    color: $color-light;
+    font-size: rem(12);
+  }
+}
+
+.page-top {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  @include md-layout {
+    left: inherit;
+    right: 10px;
+  }
+  &__link {
+    position: relative;
+  }
+  &__img {
+    width: 75px;
+    height: auto;
+    @include md-layout {
+      width: 100px;
+    }
+    @include lg-layout {
+      width: 125px;
+    }
+  }
+}

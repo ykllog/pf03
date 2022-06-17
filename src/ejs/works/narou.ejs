@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <%- include('../_includes/_common.ejs') %>
+
+        <title>なろう本文検索&ensp;&gt;&ensp;伊藤宏恵のポートフォリオサイト</title>
+    </head>
+
+    <body>
+        <%- include('../_includes/_header') %>
+
+        <main class="main">
+            <section class="works-wrap">
+                <article class="works">
+                    <div class="works__pic">
+                        <img src="../../asset/image/works_img_narou.png" alt="なろう本文検索のファーストビューの画像" class="works__img">
+                    </div>
+
+                    <div class="works__catch">
+                        <h2 class="works__catch__main-title">なろう本文検索</h2>
+                        <div class="works__catch__link link-box">
+                            <a href="https://narou.ykllog.com/" target="_blank" class="link-box__link">サイトへ</a>
+                        </div>
+                    </div>
+
+                    <dl class="works__content">
+                        <dt class="works__content__title">サイトについて</dt>
+                        <dd class="works__content__description">
+                            <div class="works__content__description__text">
+                                <ul class="list-style">
+                                    <li class="list-style">JavaScript（jQuery）の勉強のため</li>
+                                    <li class="list-style">既存サービスの提供が終了となり、後継サービスを求める人が多く目についたため</li>
+                                </ul>
+                            </div>
+                            <p class="works__content__description__text">
+                                上記二点を目的として、作成しました。<br>
+                                詳しくは、<a href="https://blog.ykllog.com/archives/829" target="_blank" class="normal__link"
+                                    >【個人開発】小説家になろうの本文検索アプリを作ってみた話</a
+                                >として学習記録ブログにまとめています。
+                            </p>
+                            <p class="works__content__description__text">
+                                2021年12月12日時点で、「小説家になろう」または略称である「なろう」に「本文検索」、または「全文検索」を加えた検索ワードでのGoogle検索結果が1位表示となっています。<br>
+                                また、「小説家になろう or
+                                なろう」と「検索」という文字列での検索結果は常に10位以内表示です。（過去90日以内の平均掲載順位は「小説家になろう
+                                検索」が6.7、「なろう 検索」が5.7となります）<br>
+                                これは同じ検索ワードで表示されるサイト（小説家になろう公式サイトを除く）でSEO対策を行なっていないことが多いためと考えています。また対策が取られていても、ブログサイトや大手出版社の漫画配信サイトでは主目的が異なると判断されているのではないかと考えます。
+                            </p>
+                        </dd>
+                        <dt class="works__content__title">使用言語</dt>
+                        <dd class="works__content__description">
+                            HTML、CSS、jQuery
+                        </dd>
+                        <dt class="works__content__title">作成期間</dt>
+                        <dd class="works__content__description">
+                            ３日間（10時間＋８時間＋６時間）
+                        </dd>
+                        <dt class="works__content__title">ソースコード</dt>
+                        <dd class="works__content__description">
+                            <a href="https://github.com/ykllog/narou" target="_blank" class="normal__link">https://github.com/ykllog/narou</a>
+                        </dd>
+                    </dl>
+                </article>
+
+                <div class="back-link">
+                    <div class="link-box"><a href="/#works" class="link-box__link">制作物一覧へ</a></div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('../_includes/_footer.ejs') %>
+    </body>
+</html>

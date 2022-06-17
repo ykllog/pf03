@@ -1,0 +1,24 @@
+$sns-colors: (
+  twitter: #1b95e0,
+  github: rgba($color-default, .5),
+  blog: $color-accent-main,
+);
+.address__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  .address__item:not(:last-child) {
+    margin-right: 1em;
+  }
+  .sns-link {
+    font-size: rem(32);
+    @each $key, $value in $sns-colors {
+      &--#{$key} {
+        @include hover {
+          color: $value;
+        }
+      }
+    }
+  }
+}

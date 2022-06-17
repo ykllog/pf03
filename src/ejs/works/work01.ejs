@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <%- include('../_includes/_common.ejs') %>
+
+        <title>模写サイト１&ensp;&gt;&ensp;伊藤宏恵のポートフォリオサイト</title>
+    </head>
+
+    <body>
+        <%- include('../_includes/_header') %>
+
+        <main class="main">
+            <section class="works-wrap">
+                <article class="works">
+                    <div class="works__pic">
+                        <img src="../../asset/image/works_img_work01.png" alt="DIGSMILE INC.のファーストビューの画像" class="works__img">
+                    </div>
+
+                    <div class="works__catch">
+                        <h2 class="works__catch__main-title">DIGSMILE INC.</h2>
+                        <span class="works__catch__sub-title">模写サイト</span>
+                        <div class="works__catch__link link-box">
+                            <a href="https://practice.ykllog.com/coding03/" target="_blank" class="link-box__link">サイトへ</a>
+                        </div>
+                        <div class="works__catch__pass">
+                            ID：copy&ensp;Password：pass
+                        </div>
+                    </div>
+
+                    <dl class="works__content">
+                        <dt class="works__content__title">サイトについて</dt>
+                        <dd class="works__content__description">
+                            <p class="works__content__description__text">
+                                XDで作成されたデザインカンプを元にコーディングしています。<br>
+                                ピクセルパーフェクトよりもコードの保守性を重視したコーディングを行っています。
+                            </p>
+                            <p class="works__content__description__text">
+                                この課題はXDカンプのみの配布となっており、画像の書き出しから行いました。<br>
+                                書き出し方法はもちろん、画像の拡張子を何にするかや、画像サイズをどうするか悩みました。<br>
+                                特にsvgファイルの書き出し方法が難しかったです。他のpngファイルなどと同様に書き出すと、CSSで色の変更ができなかったためです。
+                            </p>
+                            <p class="works__content__description__text">
+                                そのsvgファイルであるサイトタイトルはファーストビュー画像を超えた時に、メニューは画面の高さを超えた時に、それぞれ色が反転するようになっています。
+                            </p>
+                            <picture class="works__content__description__pic"><img src="../../asset/image/works_img_work01_detail.gif" alt=""></picture>
+                            <p class="works__content__description__text">
+                                また、ハンバーガーメニューの作成に時間を使いました。<br>
+                                widthを0と100に切り替える形でメニューを開閉させていたため、widthが狭くなった時に表示が崩れてしまったためです。<br>
+                                そのため、widthサイズの変更ではなく、positionの位置を移動する形でのメニューの開閉に切り替えました。<br>
+                                ハンバーガーメニューについてはもっとさまざまな記述方法を学んでいきたいと思います。
+                            </p>
+                            <p class="works__content__description__text">
+                                模写サイトという特性上、metaによる検索避けに加えて、BASIC認証を施しています。
+                            </p>
+                        </dd>
+                        <dt class="works__content__title">使用言語</dt>
+                        <dd class="works__content__description">
+                            HTML、Sass（SCSS）、jQuery
+                        </dd>
+                        <dt class="works__content__title">作成期間</dt>
+                        <dd class="works__content__description">
+                            ４日間<br>
+                            （トップページ4.5時間+jQuery設定3時間+下層ページ6.5時間+微調整1.5時間=15.5時間）
+                        </dd>
+                        <dt class="works__content__title">ソースコード</dt>
+                        <dd class="works__content__description">
+                            <a href="https://github.com/ykllog/coding03" target="_blank" class="normal__link">https://github.com/ykllog/coding03</a>
+                        </dd>
+                    </dl>
+                </article>
+
+                <div class="back-link">
+                    <div class="link-box"><a href="/#works" class="link-box__link">制作物一覧へ</a></div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('../_includes/_footer.ejs') %>
+    </body>
+</html>

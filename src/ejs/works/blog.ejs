@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <%- include('../_includes/_common.ejs') %>
+
+        <title>学習記録ブログ&ensp;&gt;&ensp;伊藤宏恵のポートフォリオサイト</title>
+    </head>
+
+    <body>
+        <%- include('../_includes/_header') %>
+
+        <main class="main">
+            <section class="works-wrap">
+                <article class="works">
+                    <div class="works__pic">
+                        <img src="../../asset/image/works_img_blog.png" alt="学習記録ブログのファーストビューの画像" class="works__img">
+                    </div>
+
+                    <div class="works__catch">
+                        <h2 class="works__catch__main-title">spindle</h2>
+                        <span class="works__catch__sub-title">WordPressブログ</span>
+                        <div class="works__catch__link link-box">
+                            <a href="https://blog.ykllog.com" target="_blank" class="link-box__link">サイトへ</a>
+                        </div>
+                    </div>
+
+                    <dl class="works__content">
+                        <dt class="works__content__title">サイトについて</dt>
+                        <dd class="works__content__description">
+                            <p class="works__content__description__text">
+                                WordPressの学習用に作成しました。<br>
+                                学習内容のアウトプット場所としても利用することで、ブロックエディタを含めた編集者としての使い方も学習しています。<br>
+                                また、極力プラグインを使用せずに実装しようと考え、ページネーション機能やパンくずリストなどは自作しています。
+                            </p>
+                            <p class="works__content__description__text">
+                                デザインは、縦のラインを強調させるべく、ワンカラムとしています。<br>
+                                まだまだ粗い部分や足りない機能が目立つので、今後も少しずつ手を入れていくつもりです。
+                            </p>
+                        </dd>
+                        <dt class="works__content__title">使用言語</dt>
+                        <dd class="works__content__description">
+                            WordPress（自作テーマ）、Sass（SCSS）、jQuery
+                        </dd>
+                        <dt class="works__content__title">作成期間</dt>
+                        <dd class="works__content__description">
+                            2021/01/18～2021/01/21&emsp;＋修正
+                        </dd>
+                    </dl>
+                </article>
+
+                <div class="back-link">
+                    <div class="link-box"><a href="/#works" class="link-box__link">制作物一覧へ</a></div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('../_includes/_footer.ejs') %>
+    </body>
+</html>

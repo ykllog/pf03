@@ -1,0 +1,177 @@
+/* ==================================
+レイアウト
+===================================== */
+
+//*------------------*
+//*  z-index
+//*------------------*
+
+$layer: (
+  works-fv: -5,
+  header: 10,
+  nav-toggle: 15,
+  modal-overlay: 20,
+  modal-window: 25,
+  cursor: 999,
+  stalker: 999,
+  loading: 999,
+  spinner: 999,
+);
+@mixin z-index($key) {
+  z-index: map-get($layer, $key);
+}
+
+//*------------------*
+//*  link-box
+//*------------------*
+
+@mixin link-box($width: 290px, $height: null, $margin: 0 auto, $content: null) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  border: 1px solid $color-accent-main;
+  background-color: $color-light;
+  position: relative;
+  @include hover {
+    background-color: rgba($color-accent-base, .75);
+  }
+  &__link {
+    width: $width;
+    height: $height;
+    line-height: $height;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    line-height: $height;
+    font-weight: bold;
+    font-size: rem(12);
+    &::after {
+      content: $content;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+//*------------------*
+//*  セクション
+//*------------------*
+
+@mixin section($max-width: 1000px, $padding: 5%) {
+  width: 100%;
+  height: auto;
+  padding: 80px 2.5% 100px;
+  @include md-layout {
+    padding: 125px 5% 100px;
+  }
+  @include tb-layout {
+    padding: 125px $padding 100px;
+  }
+  @include lg-layout {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 125px 0 100px;
+  }
+}
+
+.top__section, .aboutme__section, .works-wrap {
+  @include section;
+}
+
+//*------------------*
+//*  タイトル
+//*------------------*
+
+.center-title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  .main-title {
+    font-size: clamp(rem(50), 6vw, rem(100));
+    font-family: $font-bowlby;
+    font-weight: bold;
+    color: $color-accent-base;
+  }
+  .sub-title {
+    font-size: clamp(rem(20), 2vw, rem(30));
+    font-family: $font-mplus;
+    font-weight: bold;
+    color: $color-accent-bg;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//*------------------*
+//*  共通部分
+//*------------------*
+
+@mixin aboutme-subtitle {
+  font-family: $font-mplus;
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: $color-accent-bg;
+  background: url(../../asset/image/listicon.png) no-repeat 0 5px / 30px 30px;
+  margin-bottom: 1.5rem;
+  padding-left: 40px;
+  @include md-layout {
+    font-size: 1.75rem;
+    background: url(../../asset/image/listicon.png) no-repeat 0 5px / 40px 40px;
+    padding-left: 50px;
+  }
+  .span__color {
+    font-family: $font-mplus;
+    font-weight: 900;
+    font-size: 1.25rem;
+    @include md-layout {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@mixin aboutme-item {
+  &__title {
+    @include aboutme-subtitle;
+    @include md-layout {
+      margin-bottom: -1rem;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+    @include md-layout {
+      width: 100%;
+      height: auto;
+      padding-top: 50px;
+    }
+  }
+  &__description {
+    background-color: rgba($color-light, 0.75);
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+    @include md-layout {
+      width: 70%;
+      height: auto;
+      padding: 2.5% 5%;
+      margin: 0 auto 0 0;
+    }
+  }
+  &__text:not(:last-child) {
+    margin-bottom: .5rem;
+  }
+  &__pic {
+    @include md-layout {
+      display: none;
+    }
+  }
+}
